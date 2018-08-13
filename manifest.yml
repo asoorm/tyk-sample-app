@@ -1,6 +1,9 @@
 ---
 applications:
 - name: tyk-sample-app
+  env:
+    GOVERSION: go1.10
+    GOPACKAGENAME: github.com/matiasinsaurralde/tyk-sample-app
   memory: 32M
   instances: 1
   host: tyk-sample-app
